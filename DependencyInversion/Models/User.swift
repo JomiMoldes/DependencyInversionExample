@@ -7,19 +7,22 @@
 //
 
 import Foundation
+//import ModelsInterfaces
+import CoreGraphics
 
 public struct User {
     
     public let name: String
     public let avatarUrl: String
+    public let lastName: String
 //    public let card: ICard
     
-    public init(name: String, avatarUrl: String) {
+    public init(name: String, avatarUrl: String, lastName: String = "hola") {
         self.name = name
         self.avatarUrl = avatarUrl
 //        self.card = card
+        self.lastName = lastName
     }
-    
 }
 
 //public struct Card: ICard {

@@ -1,6 +1,6 @@
 //
-//  FeatureAViewController.swift
-//  FeatureA
+//  FeatureBViewController.swift
+//  FeatureB
 //
 //  Created by Miguel Moldes on 05/06/2020.
 //  Copyright © 2020 Brubank. All rights reserved.
@@ -10,10 +10,10 @@ import Foundation
 import UIKit
 //import ModelsInterfaces
 import Models
+//import FeatureBInterfaces
 
-public class FeatureAViewController: UIViewController {
+public class FeatureBViewController: UIViewController {
     
-//    public let user: IUser
     public let user: User
     
     public init(user: User) {
@@ -28,8 +28,9 @@ public class FeatureAViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         print("user name:", self.user.name)
-        print("user avatarUrl:", self.user.avatarUrl)
+        print("user avatarUrl", self.user.avatarUrl)
 //        self.user.foo()
 //        let user = User(name: "ll", avatarUrl: "ll", card: Card())
+//        let user2 = User(name: "ll", avatarUrl: "ll", card: Card())
     }
 }

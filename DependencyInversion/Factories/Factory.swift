@@ -9,6 +9,8 @@
 import Foundation
 import ModelsInterfaces
 import Models
+import FeatureBInterfaces
+import FeatureB
 
 public struct Factory {
 
@@ -18,6 +20,10 @@ public struct Factory {
     
     public static func createCard() -> ICard {
         return Card()
+    }
+    
+    public static func createFeatureBVC() -> FeatureBProtocol {
+        return FeatureBViewController(user: createUser(name: "Miguel", avatarUrl: "MiguelURL") as! User)
     }
 
 }

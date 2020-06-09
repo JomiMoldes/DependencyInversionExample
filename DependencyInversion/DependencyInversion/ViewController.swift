@@ -8,9 +8,11 @@
 
 import UIKit
 import Models
+import FeatureA
+
 //import Factories
 //import ModelsInterfaces
-import FeatureA
+//import FeatureBInterfaces
     
 class ViewController: UIViewController {
     
@@ -19,8 +21,8 @@ class ViewController: UIViewController {
         
         let user: User = User(name: "Miguel", avatarUrl: "MiguelUrl")
         
-        let controller = FeatureAViewController(user: user)
-        
+        let controller: UIViewController = FeatureAViewController(user: user)
+
         self.navigationController?.pushViewController(controller, animated: false)
         
     }

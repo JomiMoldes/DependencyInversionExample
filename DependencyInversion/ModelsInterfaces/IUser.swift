@@ -12,6 +12,7 @@ public protocol IUser {
     
     var name: String { get }
     var avatarUrl: String { get }
+    var card: ICard { get }
     
 }
 
