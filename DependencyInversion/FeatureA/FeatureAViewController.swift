@@ -8,15 +8,15 @@
 
 import Foundation
 import UIKit
-//import ModelsInterfaces
-import Models
+import ModelsInterfaces
+//import Models
 
 public class FeatureAViewController: UIViewController {
     
-//    public let user: IUser
-    public let user: User
+    public let user: IUser
+//    public let user: User
     
-    public init(user: User) {
+    public init(user: IUser) {
         self.user = user
         super.init(nibName: nil, bundle: nil)
     }

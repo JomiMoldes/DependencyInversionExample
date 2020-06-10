@@ -7,11 +7,11 @@
 //
 
 import UIKit
-import Models
+//import Models
 import FeatureA
 
-//import Factories
-//import ModelsInterfaces
+import Factories
+import ModelsInterfaces
 //import FeatureBInterfaces
     
 class ViewController: UIViewController {
@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let user: User = User(name: "Miguel", avatarUrl: "MiguelUrl")
+        let user: IUser = Factory.createUser(name: "Miguel", avatarUrl: "MiguelUrl")
         
         let controller: UIViewController = FeatureAViewController(user: user)
 
